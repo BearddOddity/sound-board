@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useSoundBoard } from "./useSoundBoard";
 import type { SoundPad } from "./types";
-import "./design-system/styles.css";
-import { Button, Card, Chip, SectionHead } from "./design-system/components/core";
+import "../../design-system/styles.css";
+import { Button, Card, Chip, SectionHead } from "../../design-system/components/core";
 
 export default function SoundBoardApp() {
   const { pads, masterVolume, setMasterVolume, activePad, brokenPads, addPad, removePad, renamePad, setPadHotkey, play, stopAll } =
